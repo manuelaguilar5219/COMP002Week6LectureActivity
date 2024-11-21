@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMP002Week6LectureActivity</title>
+</head>
+<body>
+    <form action="" method="post">
+        <p><input type="text" value="abc"> (text</p>
+        <p><textarea name="textarea" id="textarea"></textarea></p>
+        <button>Submit</button>
+    </form>
+    <script>
+        let textInput = document.getElementById("textarea"); // Get's element by the ID
+        let form = document.querySelector("form"); // "<form>"
+
+        form.addEventListener("submit", event => {
+            event.preventDefault();
+            textInput.value="Hello World!"; // Inputs text inside the text area
+        });
+
+    </script>
+</body>
+</html>
